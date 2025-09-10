@@ -1,0 +1,17 @@
+[project]
+name = "simputils-emoji"
+description = "Simple utils to work with unicode emoji data"
+requires-python = ">= 3.10"
+dynamic = ["version"]
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+keywords = ["simputils", "helpers", "emoji", "unicode", "utf"]
+classifiers = [
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+]
+authors = [
+    {name = "PandaHugMonster", email = ""}
+]
