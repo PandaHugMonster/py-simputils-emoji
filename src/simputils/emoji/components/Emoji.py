@@ -161,12 +161,12 @@ class Emoji(AbstractEmojiObject):
 		res = []
 		for char in self._data:
 			if callable(self._filtered):
-				if not self._filtered(self, char, None):
+				if not self._filtered(char, self, None):
 					continue
 			elif len(char) == 0 or char in self._filtered:
 				continue
 			if callable(self._replaced):
-				char = self._replaced(self, char)
+				char = self._replaced(char, self)
 			elif char in self._replaced:
 				char = self._replaced[char]
 			if isinstance(char, self.__class__):
@@ -206,7 +206,7 @@ class Emoji(AbstractEmojiObject):
 			sub_res = []
 			for char in data:
 				other = Emoji(other)
-				if not filtered(self, str(char), other.raw_data):
+				if not filtered(str(char), self, other.raw_data):
 					continue
 				sub_res.append(char)
 			data = sub_res
