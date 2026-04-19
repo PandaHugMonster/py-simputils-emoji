@@ -1,9 +1,8 @@
 [project]
 name = "simputils-emoji"
-version = "0.1.0"
 description = "Simple utils to work with unicode emoji data"
-requires-python = ">=3.14"
-#dynamic = ["version"]
+requires-python = ">= 3.10"
+dynamic = ["version"]
 readme = "README.md"
 license = "MIT"
 license-files = ["LICENSE"]
@@ -14,14 +13,5 @@ classifiers = [
     "Programming Language :: Python :: 3.10",
 ]
 authors = [
-    { name = "PandaHugMonster", email = "ivan.ponomarev.pi@gmail.com" }
+    {name = "PandaHugMonster", email = ""}
 ]
-
-dependencies = []
-#
-#[build-system]
-#requires = ["uv_build>=0.9.18,<0.10.0"]
-#build-backend = "uv_build"
-#
-#[tool.uv.sources]
-#simputils = { path = "./simputils/emoji" }
