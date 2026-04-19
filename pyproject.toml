@@ -18,6 +18,17 @@ authors = [
 ]
 
 dependencies = []
+
+[build-system]
+requires = [
+    "setuptools>=64",
+    "setuptools_scm>=8"
+]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src/"]
+include = ["simputils.emoji"]
 #
 #[build-system]
 #requires = ["uv_build>=0.9.18,<0.10.0"]
